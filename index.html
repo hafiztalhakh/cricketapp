@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body onload="coinSelect()">
+    <label>YOU ARE TEAM A</label>
+    <br>
+    <label>How many overs do you want?</label>
+    <input type="number" name="overs" id="quantity-over">
+    <br>
+    <label>Select Coin Face:</label>
+    <br>
+    <label id="team-A-label">TEAM A: </label>
+    <select id="teamA-coin" onchange="coinSelect()">
+        <option id="heads" value="heads">Heads</option>
+        <option id="tails" value="tails">Tails</option>
+    </select>
+    <select id="bat-or-ball" onchange="userChoice()">
+            <option id="null" value="null"></option>
+            <option id="bat" value="bat">Bat</option>
+            <option id="ball" value="ball">Ball</option>
+        </select>
+    <br>
+    <label id="team-B-label">TEAM B: </label>
+    <label id="teamB-coin"></label>
+    <br>
+    <button onclick="toss()">Start Game</button>
+    <br>
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
